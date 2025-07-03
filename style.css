@@ -19,6 +19,12 @@ header {
     padding: 1rem 0;
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header h1 {
     margin: 0;
     float: left;
@@ -48,10 +54,25 @@ header nav a {
 }
 
 .content {
-    padding: 40px 0;
+    padding: 80px 40px; /* Increased padding for more space */
     background: #fff;
-    min-height: calc(100vh - 180px); /* Adjust based on header/footer height */
+    min-height: calc(100vh - 220px); /* Adjust based on header/footer height */
+    text-align: center; /* Center the hero content */
 }
+
+.content h1 {
+    font-size: 4rem; /* Big catchy headline */
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.content p {
+    font-size: 1.25rem; /* Small description */
+    color: #6c757d; /* Muted color for the description */
+    max-width: 600px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+}
+
 
 footer {
     background: #333;
